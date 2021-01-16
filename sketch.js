@@ -19,7 +19,7 @@ function setup(){
 	world = engine.world;
 
 
-	tree = new Tree(1000,600,500,500);
+	treeObj=new tree(1050,580);
 	ground = new Ground(600,650,1200,20);
 	stone = new Stone(400,200,100,100);
 	//boy = new Boy(400,200,20,10);
@@ -43,7 +43,7 @@ function setup(){
 function draw() {
   rectMode(CENTER);
   background(0);
-  tree.display();
+  treeObj.display();
   ground.display();
   stone.display();
   //boy.display();
